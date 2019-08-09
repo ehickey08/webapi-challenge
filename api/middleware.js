@@ -7,7 +7,7 @@ exports.validatePersonID = function validatePersonID(req, res, next) {
         res.status(400).json({
             message: 'The ID parameter must be an integer.',
         });
-    let validID = people.find(person => person.id === personID);
+    let validID = people().find(person => person.id === personID);
     if (!validID)
         res.status(400).json({ message: 'There is no person with that ID.' });
     next();
@@ -37,7 +37,7 @@ exports.validateChoreID = function validateChoreID(req, res, next) {
         res.status(400).json({
             message: 'The ID parameter must be an integer.',
         });
-    let validID = chores.find(chore => chore.id === choreID);
+    let validID = chores().find(chore => chore.id === choreID);
     if (!validID)
         res.status(400).json({ message: 'There is no chore with that ID.' });
     next();
