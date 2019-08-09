@@ -39,14 +39,15 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
 - [ ] Mention two parts of Express that you learned about this week.
-
+Middleware and server side routing.
 - [ ] What is Express Middleware?
-
+There are three parts: custom, third party, and global. It allows the (req, res, next) params to be passed to another function before being processed by the CRUD function. 
 - [ ] How can a client send data to an API?
-
+Through the body, query, or params of the request.
 - [ ] What can the API return to help clients know if a request was successful?
-
+A json object, with a message or data. As well as a status number to indicate the success. 
 - [ ] What Express feature can we use to partition an application into sub-applications?
+Routing
 
 ## Minimum Viable Product
 
